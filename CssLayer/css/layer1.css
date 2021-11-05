@@ -1,0 +1,7 @@
+/* 別々のcssファイルにlayerを定義した時、どちらが優先されるのか？ */
+@layer first_layer {
+  p {
+    font-size: 100px;
+    color: red;
+  }
+}

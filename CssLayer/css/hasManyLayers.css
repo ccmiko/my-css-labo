@@ -1,0 +1,20 @@
+/* 1つのcssファイルで2つのレイヤーを定義した時、どっちが勝つのか？ */
+/* 同じファイル内だと後勝ちの模様 */
+@layer first_layer {
+  p {
+    font-size: 100px;
+    color: red;
+  }
+}
+
+@layer second_layer {
+  p {
+    font-size: 200px;
+    color: green;
+  }
+}
+
+p {
+  font-size: 20px;
+  color: olive;
+}
